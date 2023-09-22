@@ -1,0 +1,120 @@
+{
+   "ContactVault": [
+      {
+         "anonymous": false,
+         "inputs": [
+            {
+               "indexed": true,
+               "internalType": "address",
+               "name": "user",
+               "type": "address"
+            },
+            {
+               "indexed": false,
+               "internalType": "string",
+               "name": "name",
+               "type": "string"
+            },
+            {
+               "indexed": false,
+               "internalType": "string",
+               "name": "phoneNumber",
+               "type": "string"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "date",
+               "type": "uint256"
+            }
+         ],
+         "name": "ContactAdded",
+         "type": "event"
+      },
+      {
+         "anonymous": false,
+         "inputs": [
+            {
+               "indexed": true,
+               "internalType": "address",
+               "name": "user",
+               "type": "address"
+            },
+            {
+               "indexed": false,
+               "internalType": "string",
+               "name": "name",
+               "type": "string"
+            },
+            {
+               "indexed": false,
+               "internalType": "string",
+               "name": "phoneNumber",
+               "type": "string"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "date",
+               "type": "uint256"
+            }
+         ],
+         "name": "ContactDeleted",
+         "type": "event"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "string",
+               "name": "_name",
+               "type": "string"
+            },
+            {
+               "internalType": "string",
+               "name": "_number",
+               "type": "string"
+            }
+         ],
+         "name": "addOrUpdateContact",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "name": "contacts",
+         "outputs": [
+            {
+               "internalType": "string",
+               "name": "name",
+               "type": "string"
+            },
+            {
+               "internalType": "string",
+               "name": "phoneNumber",
+               "type": "string"
+            },
+            {
+               "internalType": "uint256",
+               "name": "date",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "deleteContact",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      }
+   ]
+}
